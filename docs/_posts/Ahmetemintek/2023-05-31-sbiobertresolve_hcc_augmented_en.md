@@ -142,16 +142,16 @@ val result = pipeline.fit(data).transform(data)
 ## Results
 
 ```bash
-+---------------------------+-------+----------+--------------------+---------------------------------------------------------------------------+
-|                  ner_chunk| entity|icd10_code|           all_codes|                                                                resolutions|
-+---------------------------+-------+----------+--------------------+---------------------------------------------------------------------------+
-|               hypertension|PROBLEM|         0|                 [0]|                          [hypertension [essential (primary) hypertension]]|
-|chronic renal insufficiency|PROBLEM|         0|            [0, 136]|[chronic renal insufficiency [chronic kidney disease, unspecified], end ...|
-|                       COPD|PROBLEM|       111|[111, 80, 0, 23, 47]|[copd [chronic obstructive pulmonary disease, unspecified], coning [comp...|
-|                  gastritis|PROBLEM|         0|                 [0]|                     [gastritis [gastritis, unspecified, without bleeding]]|
-|                        TIA|PROBLEM|         0|         [0, 12, 48]|[tia [transient cerebral ischemic attack, unspecified], tsh-oma [benign ...|
-|                hypotension|PROBLEM|         0|                 [0]|                                                [hypotension [hypotension]]|
-+---------------------------+-------+----------+--------------------+---------------------------------------------------------------------------+
++---------------------------+-------+---------+--------------------+---------------------------------------------------------------------------+
+|                  ner_chunk| entity|hcc_score|           all_codes|                                                                resolutions|
++---------------------------+-------+---------+--------------------+---------------------------------------------------------------------------+
+|               hypertension|PROBLEM|        0|                 [0]|                          [hypertension [essential (primary) hypertension]]|
+|chronic renal insufficiency|PROBLEM|        0|            [0, 136]|[chronic renal insufficiency [chronic kidney disease, unspecified], end ...|
+|                       COPD|PROBLEM|      111|[111, 80, 0, 23, 47]|[copd [chronic obstructive pulmonary disease, unspecified], coning [comp...|
+|                  gastritis|PROBLEM|        0|                 [0]|                     [gastritis [gastritis, unspecified, without bleeding]]|
+|                        TIA|PROBLEM|        0|         [0, 12, 48]|[tia [transient cerebral ischemic attack, unspecified], tsh-oma [benign ...|
+|                hypotension|PROBLEM|        0|                 [0]|                                                [hypotension [hypotension]]|
++---------------------------+-------+---------+--------------------+---------------------------------------------------------------------------+
 
 ```
 
