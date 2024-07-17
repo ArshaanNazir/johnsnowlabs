@@ -43,6 +43,14 @@ deploy:
   databricks_link: https://marketplace.databricks.com/details/xxx
 
 
+
+
+deploy:
+  sagemaker_link: https://aws.amazon.com/marketplace/pp/xxx
+  snowflake_link: https://marketplace.snowflake.com/details/xxx
+  databricks_link: https://marketplace.databricks.com/details/xxx
+
+
 <button class="button button-orange" disabled>Live Demo</button>
 <button class="button button-orange" disabled>Open in Colab</button>
 [Download](https://s3.amazonaws.com/auxdata.johnsnowlabs.com/clinical/models/explain_clinical_doc_biomarker_en_5.3.0_3.0_1710143149515.zip){:.button.button-orange.button-orange-trans.arr.button-icon.hidden}
